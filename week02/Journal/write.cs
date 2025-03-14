@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 
 public class Write
 {
-    
     public static string Prompts()
     {
         List<string> prompts = new List<string>
@@ -18,6 +19,6 @@ public class Write
         Random rand = new Random();
         int index = rand.Next(prompts.Count);  
 
-        return prompts[index];  
+        return prompts[index];
     }
 }
